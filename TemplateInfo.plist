@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Nodes</key>
+	<array>
+		<string>main.m:main:NSApplicationMain</string>
+		<string>___PACKAGENAME___-Info.plist:Mac</string>
+		<string>___PACKAGENAME___-Info.plist:ApplicationCategory</string>
+        <string>CCGLView.h</string>
+        <string>CCGLView.mm</string>
+        <string>MyCinderGLSketch.h</string>
+        <string>MyCinderGLSketch.mm</string>
+        <string>MyController.h</string>
+        <string>MyController.mm</string>
+        <string>MainMenu.nib</string>
+        <string>InfoPlist.strings</string>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>Cocoa</string>
+				<string>AppKit</string>
+				<string>ApplicationServices</string>
+				<string>CoreData</string>
+				<string>Foundation</string>
+				<string>Accelerate</string>
+				<string>AudioToolbox</string>
+				<string>AudioUnit</string>
+				<string>CoreAudio</string>
+				<string>QuickTime</string>
+				<string>QTKit</string>
+				<string>CoreVideo</string>
+				<string>OpenGL</string>
+			</array>
+           <key>SharedSettings</key>
+            <dict>
+                <key>ARCHS</key>
+                <string>$(ARCHS_STANDARD_32_BIT)</string>
+                <key>GCC_VERSION</key>
+                <string>com.apple.compilers.llvmgcc42</string>
+                <key>MACOSX_DEPLOYMENT_TARGET</key>
+                <string>latest_macosx</string>
+                <!--key>SDK</key>
+                <string>current_macos</string-->
+                <key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+                <string>YES</string>
+                <key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
+                <string>YES</string>
+                <key>HEADER_SEARCH_PATHS</key>
+                <string>$(CINDER_PATH)/include $(CINDER_PATH)/boost</string>
+                <key>USER_HEADER_SEARCH_PATHS</key>
+                <string>$(CINDER_PATH)/include</string>
+                <key>LIBRARY_SEARCH_PATHS</key>
+                <string>$(CINDER_PATH)/lib $(CINDER_PATH)/lib/macosx</string>
+                <key>CINDER_PATH</key>
+                <string>../..</string>
+            </dict>
+			<key>Configurations</key>
+			<dict>
+                <key>Debug</key>
+                <dict>
+                    <key>ONLY_ACTIVE_ARCH</key>
+                    <string>YES</string>
+                    <key>OTHER_LDFLAGS</key>
+                    <string>$(CINDER_PATH)/lib/libcinder_d.a</string>
+                </dict>
+                <key>Release</key>
+                <dict>
+                    <key>DEBUG_INFORMATION_FORMAT</key>
+                    <string>dwarf-with-dsym</string>
+                    <key>OTHER_LDFLAGS</key>
+                    <string>$(CINDER_PATH)/lib/libcinder.a</string>
+                </dict>
+            </dict>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>SpecialType</key>
+			<string>LSApplicationCategoryType</string>
+			<key>Placeholder</key>
+			<string>None</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Name</key>
+			<string>App Store Category</string>
+			<key>Identifier</key>
+			<string>applicationCategory</string>
+			<key>Description</key>
+			<string>The category for your application in the Mac App Store.</string>
+			<key>Units</key>
+			<dict>
+				<key></key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>___PACKAGENAME___-Info.plist:ApplicationCategory</key>
+							<string></string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+    <string>This template provides a starting point for an application that uses Cinder from within a typical Cocoa environment. Features a MayaCam, a colored cube and a Cocoa slider to control the size of the cube (more info at http://www.smallab.org/code/ccgl/).</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.objectiveCApplication</string>
+		<string>com.apple.dt.unit.macBase</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>CCGLView.h</key>
+		<dict>
+			<key>Group</key>
+			<string>CCGLCore</string>
+			<key>Path</key>
+			<string>CCGLView.h</string>
+		</dict>
+		<key>CCGLView.mm</key>
+		<dict>
+			<key>Group</key>
+			<string>CCGLCore</string>
+			<key>Path</key>
+			<string>CCGLView.mm</string>
+		</dict>
+		<key>MyCinderGLSketch.h</key>
+		<dict>
+			<key>Group</key>
+			<string>MyClasses</string>
+			<key>Path</key>
+			<string>MyCinderGLSketch.h</string>
+		</dict>
+		<key>MyCinderGLSketch.mm</key>
+		<dict>
+			<key>Group</key>
+			<string>MyClasses</string>
+			<key>Path</key>
+			<string>MyCinderGLSketch.mm</string>
+		</dict>
+		<key>MyController.h</key>
+		<dict>
+			<key>Group</key>
+			<string>MyClasses</string>
+			<key>Path</key>
+			<string>MyController.h</string>
+		</dict>
+		<key>MyController.mm</key>
+		<dict>
+			<key>Group</key>
+			<string>MyClasses</string>
+			<key>Path</key>
+			<string>MyController.mm</string>
+		</dict>
+		<key>MainMenu.nib</key>
+		<dict>
+			<key>Group</key>
+			<string>MyAssets</string>
+			<key>Path</key>
+			<string>MainMenu.nib</string>
+		</dict>
+		<!--key>en.lproj/MainMenu.xib</key>
+		<dict>
+			<key>Path</key>
+			<string>MainMenuApp.xib</string>
+		</dict-->
+		<key>InfoPlist.strings</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>InfoPlist.strings</string>
+		</dict>
+		<key>___PACKAGENAME___-Info.plist:Mac</key>
+		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
+&lt;string&gt;1.0&lt;/string&gt;
+&lt;key&gt;LSMinimumSystemVersion&lt;/key&gt;
+&lt;string&gt;${MACOSX_DEPLOYMENT_TARGET}&lt;/string&gt;
+&lt;key&gt;CFBundleVersion&lt;/key&gt;
+&lt;string&gt;1&lt;/string&gt;
+&lt;key&gt;NSMainNibFile&lt;/key&gt;
+&lt;string&gt;MainMenu&lt;/string&gt;
+&lt;key&gt;NSPrincipalClass&lt;/key&gt;
+&lt;string&gt;NSApplication&lt;/string&gt;
+</string>
+		<key>main.m:main:NSApplicationMain</key>
+		<string>return NSApplicationMain(argc, (const char **)argv);</string>
+		<key>___PACKAGENAME___-Info.plist:ApplicationCategory</key>
+		<string>&lt;key&gt;LSApplicationCategoryType&lt;/key&gt;
+&lt;string&gt;___VARIABLE_applicationCategory___&lt;/string&gt;
+</string>
+	</dict>
+	<key>Identifier</key>
+	<string>org.smallab.ccglBasicApplication</string>
+</dict>
+</plist>
