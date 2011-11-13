@@ -1,4 +1,4 @@
-***CocoaCinderGL XCode Templates: [http://www.smallab.org/code/ccgl/](http://www.smallab.org/code/ccgl/)***
+**CocoaCinderGL XCode Templates: [http://www.smallab.org/code/ccgl/](http://www.smallab.org/code/ccgl/)**
 
 **CocoaCinderGL eases the use of Cinder from within a typical XCode/Cocoa project.** Thus allowing C++/Obj-C creative coders to build MacOS apps bearing several "Cinder sketches" as well as Cocoa sliders, buttons...
 
