@@ -5,10 +5,12 @@
 //  Created by Matthieu Savary on 03/03/11.
 //  Copyright (c) 2011 SMALLAB.ORG. All rights reserved.
 //
-//  More info on the CCGL project >> http://www.smallab.org/code/ccgl/
+//  More info on the CCGL project >> http://cocoacid.org/mac/
 //  License & disclaimer >> see license.txt file included in the distribution package
 //
-//  
+//  Latest revision on 11/08/12.
+//
+//
 //  The Cinder source code is used under the following terms:
 //
 //
@@ -31,7 +33,7 @@
 //  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 //  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
-//  
+//
 
 #import "CCGLView.h"
 
@@ -532,7 +534,7 @@ ResourceLoadExc::ResourceLoadExc( const string &macPath )
 	if( resourcePath.empty() )
 		throw ResourceLoadExc( macPath );
 	else
-		return DataSourcePath::createRef( resourcePath );
+		return DataSourcePath::create( resourcePath );
 }
 
 - (string) getResourcePath:(string) rsrcRelativePath

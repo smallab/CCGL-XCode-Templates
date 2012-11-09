@@ -7,12 +7,12 @@
 		<string>main.m:main:NSApplicationMain</string>
 		<string>___PACKAGENAME___-Info.plist:Mac</string>
 		<string>___PACKAGENAME___-Info.plist:ApplicationCategory</string>
-        <string>CCGLView.h</string>
-        <string>CCGLView.mm</string>
-        <string>MyCinderGLSketch.h</string>
-        <string>MyCinderGLSketch.mm</string>
-        <string>MyController.h</string>
-        <string>MyController.mm</string>
+        <string>../CCGLCore/CCGLView.h</string>
+        <string>../CCGLCore/CCGLView.mm</string>
+        <string>./MyCCGLDrawing.h</string>
+        <string>./MyCCGLDrawing.mm</string>
+        <string>./MyController.h</string>
+        <string>./MyController.mm</string>
         <string>MainMenu.nib</string>
         <string>InfoPlist.strings</string>
 	</array>
@@ -112,7 +112,7 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-    <string>This template provides a starting point for an application that uses Cinder from within a typical Cocoa environment. Features a MayaCam, a colored cube and a Cocoa slider to control the size of the cube (more info at http://www.smallab.org/code/ccgl/).</string>
+    <string>This template provides a starting point for an application that uses Cinder from within a typical Cocoa environment. Features a MayaCam, a colored cube and a Cocoa slider to control the size of the cube (more info at http://cocoacid.org/mac/).</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Ancestors</key>
@@ -122,42 +122,42 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>CCGLView.h</key>
+		<key>../CCGLCore/CCGLView.h</key>
 		<dict>
 			<key>Group</key>
 			<string>CCGLCore</string>
 			<key>Path</key>
-			<string>CCGLView.h</string>
+			<string>CCGLCore/CCGLView.h</string>
 		</dict>
-		<key>CCGLView.mm</key>
+		<key>../CCGLCore/CCGLView.mm</key>
 		<dict>
 			<key>Group</key>
 			<string>CCGLCore</string>
 			<key>Path</key>
-			<string>CCGLView.mm</string>
+			<string>CCGLCore/CCGLView.mm</string>
 		</dict>
-		<key>MyCinderGLSketch.h</key>
+		<key>./MyCCGLDrawing.h</key>
 		<dict>
 			<key>Group</key>
 			<string>MyClasses</string>
 			<key>Path</key>
-			<string>MyCinderGLSketch.h</string>
+			<string>MyCCGLDrawing.h</string>
 		</dict>
-		<key>MyCinderGLSketch.mm</key>
+		<key>./MyCCGLDrawing.mm</key>
 		<dict>
 			<key>Group</key>
 			<string>MyClasses</string>
 			<key>Path</key>
-			<string>MyCinderGLSketch.mm</string>
+			<string>MyCCGLDrawing.mm</string>
 		</dict>
-		<key>MyController.h</key>
+		<key>./MyController.h</key>
 		<dict>
 			<key>Group</key>
 			<string>MyClasses</string>
 			<key>Path</key>
 			<string>MyController.h</string>
 		</dict>
-		<key>MyController.mm</key>
+		<key>./MyController.mm</key>
 		<dict>
 			<key>Group</key>
 			<string>MyClasses</string>
