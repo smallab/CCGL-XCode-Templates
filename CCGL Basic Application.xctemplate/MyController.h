@@ -10,10 +10,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MyCCGLDrawing.h"
 
 
 @interface MyController : NSObject {
-	IBOutlet id CinderDrawing;
+	IBOutlet MyCCGLDrawing *CinderDrawing;
 }
 
 - (IBAction) listenToCubeSizeSlider: (NSSlider*) sender;
